@@ -186,7 +186,7 @@ body{
     color: #F9FAF8;
     font-size: min(4.5vw, 18px);
     background-color:#3882F6;
-    border-color: #F9FAF8;
+    border: 2px solid #F9FAF8;
     border-radius: 7px;
     
 }
@@ -200,4 +200,120 @@ body{
 }
 .footer-content>.creation-date{
     font-size: min(4.5vw, 18px);
+}
+
+/*=================TABLET==================*/
+
+@media only screen and (min-width: 650px) {
+    /*===Header-Tablet===*/
+    .header>.container{
+        padding: 2vh 2vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .header-content>h1{
+        color: #F9FAF8;
+        font-size: min(4vw,20px);
+    }
+    .header-content>img{
+        height: min(100%, 70px);
+        width: min(100%, 70px); 
+    }
+    .header-content{
+        justify-content: flex-start;
+        width: 65%;
+    }
+    .nav-links{
+        padding-top: 15px;
+        width: 35%;
+        justify-content: flex-end;
+    }
+    .nav-links>ul{
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+        font-size: min(2vw, 18px);
+    }
+
+    /*===Hero-Tablet===*/
+
+    .hero-info>.title{
+        font-size: min(5vw,36px);
+        font-weight: bolder;
+
+    }
+    /*===Info-tablet===*/
+    .info-evidences>.info-images{
+        flex-grow: 1;
+        flex-basis: 200px;
+    }
+
+    /*===Quote-Tablet===*/
+    .quote-content>.quote{
+   
+        font-size: min(4vw,30px);
+        font-style: italic;
+        font-weight: 0;
+    }
+    .quote-content>.name{
+        align-self: flex-end;
+        font-size: min(3vw,30px);
+        font-weight: bold;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    .header-content>h1{
+        color: #F9FAF8;
+        font-size: min(6vw,24px);
+    }
+    .nav-links>ul{
+        font-size: min(4.5vw, 18px);
+    }
+    .hero-content{
+    flex-direction: row;
+    gap: 3vh;
+    }
+
+    .hero-content>img{
+        order: 1;
+        width: 100%;
+        height: min(25vw, auto);
+    }
+
+    .hero-info>.title{
+        font-size: min(4vw,48px);
+        font-weight: bolder;
+    }
+    .hero-info>.subtext{
+        font-size: min(4.5vw, 18px);
+    }
+
+    .info-evidences>.info-images{
+        flex-grow: 1;
+        flex-basis: 100px;
+    }
+    
+
+    .quote-content>.quote{
+   
+        font-size: min(5vw,36px);
+        font-style: italic;
+        font-weight: 0;
+    }
+    .quote-content>.name{
+        align-self: flex-end;
+        font-size: min(4vw,36px);
+        font-weight: bold;
+    }
+    
+
+}   
+
+@media only screen and (min-width: 1200px) {
+
+    .info-evidences>.info-images{
+        flex-grow: 1;
+        flex-basis: 185px;
+    }
 }
